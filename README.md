@@ -6,7 +6,7 @@ Hollywood, and many major film studios around the world, have long faced critici
 
 ![Figure 3.1: CCDF of Number of Cast Ethnicities in High-Rating vs Lower-Rating Films](./assets/img/3.1.png)
 
-## 3.1 Shifting Demographics: Increasing Diverse Pool of Actors On and Off The Set
+## 3.1 Shifting Demographics: From Diverse Actors Pool To Diverse Cast
 <!-- ethnic demographic change among actors (# actor ethnicities) over time AND ethnic diversity change among cast/on-screen (# cast ethnicities) over time 
     - [x] expect upward trends in both => shift in actor ethnic demographics reflected by greater ethnic representation on screen -->
 
@@ -22,7 +22,7 @@ Since 1960s, however, the average cast ethnicity has slowly climbed, reaching 2 
 
 Although most films' casts have stayed ethnically homogeneous, there has always been some outlier films throughout history with much more ethnically diverse cast, potentially paving the way for further diversification in the future.
 
-## 3.3 Correlation 
+## 3.2 Increasing Representation: Appreciated by Audience And Reflected in Rating? 
 
 <!-- correlation: more ethnically diverse films more well-received/higher rating
     - [ ] ethnic diversity associated/appreciated more? 
@@ -41,7 +41,7 @@ In general, there is a small but positive correlation between a film's cast ethn
 
 This begs the question - does an ethnically diverse cast lead to a more highly-rated film? Let's dive in. 
 
-## 3.4 Statistical Significance/Causation 
+## 3.3 Identifying Impact: Ethnically Diverse Cast Improves Film Rating? 
 
 <!-- correlation: more ethnically diverse films more well-received/higher rating
 

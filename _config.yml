@@ -1,9 +1,7 @@
 theme: jekyll-theme-minimal
-title: ADA Template Website
-description: A template website for ADA
+title: An Evolutionary View of Audience Perception of Good Films
+description: What Influence Perceived Film Quality & How They Changed Over Time
 show_downloads: True
 navigation:
   - title: Home
     url: /
-  - title: Example
-    url: example

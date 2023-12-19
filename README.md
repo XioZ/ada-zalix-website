@@ -55,9 +55,9 @@ Using only actors who played in at least 35 movies, by doing so , we isolate Act
 By keeping only coefficient with p-values <0.05 , we ensure that the data is Significant and that the results are meaningfull  : 
 
 
-![Figure 4.1 Impact On Movies Ratings for Star Actors](./assets/img/actors_impact.png)
+![Figure 4.1 Impact On Movies Ratings for Star Actors](./assets/img/actors_impact.tiff)
 
 Before any further analysis, It's important to mention that the Linear regression had an R-squared of only 0.1 , meaning that only using actors explain quite badly the ratings of movies, However, the regression found 14 actors with a significant Impact on movies ratings. 
 
-Movies featuring actors like Myrna Loy or Robert Taylor often experience a nearly one-point boost in their ratings due to their participation.
+Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-point boost in their ratings due to their participation.
 

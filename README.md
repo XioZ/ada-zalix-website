@@ -43,7 +43,9 @@ Now, let's dig deeper into the __Drama__ genre to examine the impact of its comb
 
 From the aforementioned analysis, we observe a similar trend as in the overall analysis. It is noteworthy that __Romance Films__ and __Comedies__ are the most popular genres when combined with Drama. Additionally, the combination of __Short Films__ and __Drama__ gains popularity particularly after the year 2000. The coherence in trends underscores the dominant influence of the Drama genre in highly rated movies.
 
-![Figure 1.8: Number of Movies per decade for Drama and Black-and-White](./assets/img/1.8.png)
+
+![Figure 1.8: Number of Black-and-White and Romance Movies for Each Past Decade](./assets/img/1.8.png)
+
 ![Figure 1.9: Number of Black-and-White and Romance Movies for Each Past Decade](./assets/img/1.9.png)
 
 
@@ -52,7 +54,6 @@ It comes as no surprise that a significant proportion of highly-rated movies in 
 Delving into the significant surge observed in the 2000s, we aim to meticulously examine the intricate effects resulting from combinations of genres during this prolific period. By scrutinizing the interplay between different genres within this temporal frame, we seek to unravel patterns, preferences, and potential synergies that contributed to the remarkable increase in the number of highly-rated movies. This focused analysis on genre combinations promises to unveil insights into the evolving tastes, creative trends, and collaborative dynamics that defined the cinematic landscape during this particular era, enriching our understanding of the multifaceted factors influencing the success of movies.
 
 {% include 1-10.html %}
-
 
 ![Figure 1.11: Percentage of number of Movies after 2000](./assets/img/1.11.png)
 

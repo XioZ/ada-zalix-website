@@ -66,32 +66,44 @@ After identifying the most 'liked' genres based on the highest-ranked movies, we
 ## Drama
 
 **Family and Personal Struggles:** This topic focuses on themes like life, love, family dynamics, and personal challenges. It often involves characters dealing with complex relationships and emotional journeys.
+
 **Crime and Conflict**: This topic is centered around police, crime, murder, and gang-related activities. It often includes elements of suspense, betrayal, and moral dilemmas.
+
 **Historical and Political Drama:** Involving films with themes like war, leadership, and national issues. It may include movies about historical figures, soldiers, and significant political or social events.
 
 ## Comedy
 
 **Romantic and Family Comedy:** This topic deals with love, friendship, and social life. It often includes humorous takes on relationships, family, and everyday situations.
+
 **Dark Comedy:** Includes comedic films that may parody other genres or societal norms. It involves elements like police, money, and life's absurdities.
+
 **Adventurous and Escapades:** Focuses on characters like Jack and themes of adventure, road trips, and escapades, often with humorous undertones.
 
 ## Short Film
 
 **Adult Films:** This topic is about short films that focus on storytelling and character development, often involving personal tales and life experiences.
+
 **Animated Classics and Characters:** Centers on classic animated characters like Ralph, Sylvester, Tweety, and the Pink Panther, often involving comedic and adventurous plots.
+
 **Adventurous and Escapades:** Involves characters in constant motion, like Wile E. Coyote and Road Runner, featuring physical comedy and slapstick elements.
 
 ## Black-and-White
 
 **Classic Storytelling:** Involves traditional narrative structures with elements of suspense, resolution, and often a moral lesson.
+
 **Character-Centric Tales:** Focuses on personal stories and relationships, often involving a journey or transformation of the main characters like Mary or Tramp.
+
 **Family and Life Journeys:** Deals with themes of love, life, home, and the passage of time, often exploring deep emotional and relational aspects.
 
 ## Romance Film
 
 **Modern Love and Relationships:** This topic explores contemporary romantic relationships, often set in urban environments and involving themes of love, career, and personal growth.
+
 **Royal and Aristocratic Romance:** Involves stories about royalty and aristocracy, with characters like kings, princes, and their romantic and political intrigues.
+
 **Family Romance:** Centers on timeless themes of love and life, often involving family dynamics, personal discovery, and the evolution of relationships over time.
+
+![Figure 1.12: Topic distribution within the top 5 most preferred genres](./assets/img/1.12.png)
 
 We notice that the family topic is common within all the genres with a significant percentage. This suggests that the family tocpic might have an influcence with the good ranking of movies, therefore might be within the most appreciated topics by the film public.
 

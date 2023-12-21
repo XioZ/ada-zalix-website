@@ -252,7 +252,8 @@ Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-po
 
 
 
-
+In conclusion,by carefully refining the definitino of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 
+However, the low r-squared of the linear regression shows that, while actors do play a role in movie's success, there are many others factors that impact movie ratings
 
 # 5. Conclusion
 Finally after a wonderful jouney, we arrived to the conclusion of that Drama genre is widely praised for its high quality among the past decades, especially when combined with Romantic themes. The high-rating movies ubiquously have a duration longer than 80 minutes and this is the sweet spot that people generally like.

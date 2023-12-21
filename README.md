@@ -211,23 +211,19 @@ In order to perform our analysis, we first must ask ourselves how we define star
 
 ![Figure 4.1 Histogram of number of Movies per Actor](./assets/img/4.1.png)
 
-In this graph , we see that most actors in our dataset played in only 1 film, those cannot be considered for any further analysis.
+In this graph, we see that most actors in our dataset played in only 1 film, those cannot be considered for any further analysis.
 
 We've decided to first perform a linear regression to track the evolution of movie ratings with actors who played in at least 20 movies.
 
-Then , to tackle the impact of star actors in movies , we will restrict ourselves to actors who played in at least 35 movies.
+Then, to tackle the impact of star actors in movies , we will restrict ourselves to actors who played in at least 35 movies.
 
 
-#4.2 How has the impact of stars evolved over time in movie ratings?
+# 4.2 How has the impact of stars evolved over time in movie ratings?
 
 Before diving into the core of our analysis, we will try to investigate the evolution of average ratings for actors who played in at least 20 movies.
 
 
 ![Figure 4.2 Relation between year of release and average Rating](./assets/img/4.2.png)
-
-The graphs reveals a slight downward slope of the linear regression, indicating that, actors who played in at least 20 movies have played in movies who received slightly worse reviews over time.
-
-
 
 The graph reveals a slight downward slope in the linear regression, indicating that actors who have appeared in at least 20 movies have been receiving slightly worse reviews over time.
 

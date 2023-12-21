@@ -1,10 +1,26 @@
+# Team ZALIX Milestone 3
+
+# An Evolutionary View on The Making of Good Films
+
+Embark on a captivating journey through the movie industry as we delve into the heart of the movie industry—a powerhouse shaping global economics and enriching our lives. With a myriad of films flourishing, the quest for quality has intensified, leading to the establishment of renowned rating systems like IMDb, a cinematic authority.
+
+Join us in unraveling the essence of a compelling film and exploring its various facets that contribute to cinematic excellence. This project invites you to take a ride through the annals of movie history, tracing the evolution of people's perceptions of what constitutes a "good film." So fasten your seatbelts and immerse yourself in an adventure that navigates the captivating landscape of cinematic evolution.
+
+In order to do this , we will investigate 
+1. The Impact of genre and runtime on the films rating, the evolution of perception of genres over time.
+2. Are there any sweet spots or patterns in the length of top-rated films over the years? Is there a significant difference in the length of good movies across genres?
+3. How has the global actor demographics changed over time in terms of ethnic background, gender and languages spoken? Does the demographic shift translate to more ethnically, gender and linguistically diverse movies produced over the years? More importantly, is a more ethnically, gender and linguistically diverse cast appreciated by the audience and directly contribute to higher movie ratings?
+4. The presence of star translate to higher ratings ? How has the impact of stars evolved over time in movie ratings?
+
+We have established a criterion for highly-rated movies, considering those with a rating surpassing 7. This threshold is set at approximately one standard deviation above the mean of average ratings, providing a robust benchmark for cinematic excellence.
+
 # 1. Genre 
-In the realm of movies, genres play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
+To begin with, let us take a look into __genres__, which play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
 
 In our evaluation of cinematic quality, the role of genres in influencing ratings emerges as a noteworthy consideration. The objectives of this analysis encompass the exploration of various research questions:
 
 - Identification of the top 10 most prolific genres in the history of cinema.
-- Evaluation of the proportion of exemplary films within the aforementioned 10 most prolific genres, defined here as those with a rating of 7 or higher.
+- Evaluation of the proportion of exemplary films within the aforementioned 10 most prolific genres.
 - Examination of the intersection between genres and the temporal variable, aiming to identify "golden eras" marked by periods with the highest number of highly-rated films within a specific genre. This will be accomplished through the visualization of highly-rated movie counts per decade.
 - Scrutiny of genre combinations to discern noteworthy amalgamations during specific time periods. This aspect of the analysis will involve the generation of a bar chart illustrating the ratio of highly-rated movies relative to each decade.
 
@@ -198,7 +214,7 @@ We want to understand the relationship between Star Actors and movies ratings, f
 
 Using only actors who played in at least 35 movies, by doing so , we isolate Actors with a real precense in the industry.
 
-By keeping only coefficient with p-values <0.05 , we ensure that the data is Significant and that the results are meaningfull  : 
+By keeping only coefficient with p-values <0.05 , we ensure that the data is Significant and that the results are meaningfull: 
 
 
 ![Figure 4.1 Impact On Movies Ratings for Star Actors](./assets/img/4.1.png)
@@ -208,4 +224,5 @@ Before any further analysis, It's important to mention that the Linear regressio
 Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-point boost in their ratings due to their participation.
 
 
-
+# 5. Conclusion
+Finally after a wonderful jouney, we arrived to the conclusion of that Drama genre is widely praised for its high quality among the past decades, especially when combined with Romantic themes. The high-rating movies ubiquously have a duration longer than 80 minutes and this is the sweet spot that people generally like.

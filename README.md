@@ -6,16 +6,19 @@ Embark on a captivating journey through the movie industry as we delve into the 
 
 Join us in unraveling the essence of a compelling film and exploring its various facets that contribute to cinematic excellence. This project invites you to take a ride through the annals of movie history, tracing the evolution of people's perceptions of what constitutes a "good film." So fasten your seatbelts and immerse yourself in an adventure that navigates the captivating landscape of cinematic evolution.
 
-In order to do this , we will investigate 
-1. The Impact of genre and runtime on the films rating, the evolution of perception of genres over time.
-2. Are there any sweet spots or patterns in the length of top-rated films over the years? Is there a significant difference in the length of good movies across genres?
-3. How has the global actor demographics changed over time in terms of ethnic background, gender and languages spoken? Does the demographic shift translate to more ethnically, gender and linguistically diverse movies produced over the years? More importantly, is a more ethnically, gender and linguistically diverse cast appreciated by the audience and directly contribute to higher movie ratings?
-4. The presence of star translate to higher ratings ? How has the impact of stars evolved over time in movie ratings?
+To achieve this, we will explore the following questions:
+
+1. How does a film's genre influence its ratings, and what role does duration play in this relationship? Have trends in genre popularity evolved over time, revealing discernible patterns in audience preferences across decades?
+2. Are there specific lengths or patterns in the duration of top-rated films over the years? Is there a significant difference in the length of high-quality movies across genres?
+3. How have global actor demographics changed over time concerning ethnic background, gender, and languages spoken? Does this demographic shift result in the production of more ethnically, gender, and linguistically diverse movies over the years? Moreover, is a more diverse cast appreciated by the audience and directly contributes to higher movie ratings?
+4. Does the presence of stars translate to higher ratings? How has the impact of stars evolved over time concerning movie ratings?
 
 We have established a criterion for highly-rated movies, considering those with a rating surpassing 7. This threshold is set at approximately one standard deviation above the mean of average ratings, providing a robust benchmark for cinematic excellence.
 
+{% include imdb_distribution.html %}
+
 # 1. Genre 
-To begin with, let us take a look into __genres__, which play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
+To begin with, let us delve into genres, which play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
 
 In our evaluation of cinematic quality, the role of genres in influencing ratings emerges as a noteworthy consideration. The objectives of this analysis encompass the exploration of various research questions:
 
@@ -252,8 +255,15 @@ Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-po
 
 
 
-In conclusion,by carefully refining the definitino of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 
-However, the low r-squared of the linear regression shows that, while actors do play a role in movie's success, there are many others factors that impact movie ratings
+In conclusion, by carefully refining the definition of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 
+However, the low r-squared of the linear regression shows that, while actors do play a role in movie's success, there are many others factors that impact movie ratings.
 
 # 5. Conclusion
-Finally after a wonderful jouney, we arrived to the conclusion of that Drama genre is widely praised for its high quality among the past decades, especially when combined with Romantic themes. The high-rating movies ubiquously have a duration longer than 80 minutes and this is the sweet spot that people generally like.
+Finally after a wonderful jouney, we arrived to the following conclusions.
+1. The Drama genre has consistently received widespread acclaim for its high quality over the past decades, particularly when combined with Romantic themes. 
+2. Movies with high ratings are commonly associated with a duration longer than 80 minutes, which appears to be a preferred sweet spot for audience satisfaction.
+3. While ethnically diverse films initially garnered higher ratings, an increase in their production volume over the years has led to a convergence with the average ratings of non-diverse films. This suggests that ethnic diversity alone may not guarantee consistently higher ratings.
+4. Through meticulous refinement in delineating the criteria for star actors, we come the conclusion that there are actors whose presence demonstrably exerted a substantial influence on the ratings of movies.
+
+Furthermore, it is crucial to underscore that the ratings of movies are shaped by a complex interplay of numerous factors. It is essential to acknowledge that various other contributing elements exist, which we were unable to incorporate into our analysis due to constraints in both time and the scope of the dataset.
+

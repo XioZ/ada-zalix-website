@@ -205,7 +205,14 @@ An observational study is conducted to disect this claim. Logistic regression is
 However, there exists an obvious downward trend for both groups, with the average rating of ethnically diverse films decreasing faster. This does not necessarily mean that audience appreciates ethnic diversity less over time. As evidenced by [Figure 3.7], there is a fast-paced growth in the number of ethnically diverse films released over the decades. The decline in rating of ethnically diverse films coincides with this growth. As this number approaches and eventually surpasses in the last 2 decades the number of ethnically non-diverse films in the previous decade, the average rating of ethnically diverse films closes in on that of non-diverse ones. This could potentially be because in the earlier decades, few ethnically diverse films are made, and they generally end up well-received and highly rated. This possibly motivates movie studios to produce more films featuring diverse casts and with increasing volume, the average rating begins to converge to the average rating representative of the true population mean overall. This could mean that despite recent laudable calls in the public for greater diversity on the film set, history has shown that ethnic diversity alone does not translate to higher rating.
 
 # 4. Star Actors 
-# 4.1 Does star power translate to higher ratings? How has the impact of stars evolved over time in movie ratings?
+# 4.1 Defining Star Actors 
+In order to perform our analysis, we first must ask ourselves how we define star Actors. Performing a regression over actors who played in a handfull of movies might lead to misleading results. One hit wonders might be associated with very high ratings even tho they didn't play any significant role in the success of the movie they played in.
+
+![Figure 4.1 Num](./assets/img/4.1.png)
+
+
+
+# 4.2 Does star power translate to higher ratings? How has the impact of stars evolved over time in movie ratings?
 The correlation between star power and ratings in the movie industry has long been a subject of fascination. Over the years, the influence of A-list actors and actresses on the success of a film has undergone a significant evolution. The captivating question persists: does the presence of renowned stars inherently lead to higher ratings? 
 ## Star-Studded Success: Unraveling the Influence of Actors on Movie Ratings
 We want to understand the relationship between Star Actors and movies ratings, for that, we perform a Linear regression to see how each Actor Contributes to the Movie Ratings
@@ -217,11 +224,18 @@ Using only actors who played in at least 35 movies, by doing so , we isolate Act
 By keeping only coefficient with p-values <0.05 , we ensure that the data is Significant and that the results are meaningfull: 
 
 
-![Figure 4.1 Impact On Movies Ratings for Star Actors](./assets/img/4.1.png)
+![Figure 4.2 Impact On Movies Ratings for Star Actors](./assets/img/4.2.png)
 
 Before any further analysis, It's important to mention that the Linear regression had an R-squared of only 0.1 , meaning that only using actors explain quite badly the ratings of movies, However, the regression found 14 actors with a significant Impact on movies ratings. 
 
 Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-point boost in their ratings due to their participation.
+
+#4.3 How has the impact of stars evolved over time in movie ratings?
+
+Finally, we want to ask ourselves the impact of stars in movie ratings has evolved over time ? we want to find out if the presence of star actors is as important today as it way in the past.
+
+![Figure 4.3 Relation between year of release and average Rating](./assets/img/4.3.png)
+
 
 
 # 5. Conclusion

@@ -5,15 +5,17 @@
 Movies have long been a popular storytelling medium internationally, shaping cultures and conversations. While a movie's commercial success is often measured by its box office, its quality and significance in the hearts of millions of movie watchers are reflected more concretely by its rating. This project leverages on a sizeable dataset from CMU, consisting of 7,380 movie titles between 1900 and 2009, and associated user ratings from IMDB, the world's "most popular and authoritative source" for movies and ratings. It invites you to take a ride through the annals of movie history, tracing the many facets that influence audience's perception of film quality - what leave them with the impression of a "good film" and how they evolved with time. 
 
 To do this, we seek to explore and address a few important questions: 
-1. The Impact of genre and runtime on the films rating, the evolution of perception of genres over time.
+1. How does a film's genre influence its ratings, and what role does duration play in this relationship? Have trends in genre popularity evolved over time, revealing discernible patterns in audience preferences across decades?
 2. Are there any sweet spots or patterns in the length of top-rated films over the years? Is there a significant difference in the length of good movies across genres?
 3. Is a more ethnically diverse cast appreciated by the audience? Does it directly contribute to higher movie ratings?
 4. Do movie stars garner higher ratings for their films? Has the audience always been more lenient with rating when it comes to star-studded films?
 
 To frame our discussion, we consider "highly rated" films to have a minimum IMDB rating of 7. This score is set at approximately one standard deviation above the average rating of all films, giving us a robust basis for comparison.
 
+{% include imdb_distribution.html %}
+
 # 1. Genre 
-To begin, let us take a look into __genres__, which play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
+To begin, let us delve into genres, which play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
 
 In our evaluation of cinematic quality, the role of genres in influencing ratings emerges as a noteworthy consideration. The objectives of this analysis encompass the exploration of various research questions:
 
@@ -35,11 +37,11 @@ Given that our criterion for categorizing "good" movies hinges on those with a r
 
 ![Figure 1.4: Number of High-Rating Movies for the Top 10 Genres](./assets/img/1.4.png)
 
-The graphical representation highlights the prominence of the __Drama__ genre, possessing the highest count of highly-rated movies, a figure significantly surpassing other genres. However, it is imperative to consider that the sheer abundance of drama films in the dataset could contribute to this observation. To delve deeper into the matter, we meticulously examine the ratio of high-rated movies to the total number of movies within each genre, providing a more nuanced perspective on the prevalence of quality content within the diverse genres.
+The graphical representation highlights the prominence of the __Drama__ genre, possessing the highest count of highly-rated movies, a figure significantly surpassing other genres. However, it is imperative to consider that the sheer abundance of drama films in the dataset could contribute to this observation. To delve deeper into the matter, we meticulously examine the _success rate_, defined ratio of high-rated movies to the total number of movies within each genre, providing a more nuanced perspective on the prevalence of quality content within the diverse genres.
 
 ![Figure 1.5: Ratio of High-Rating Movies to the Total Number of Movies per Genre](./assets/img/1.5.png)
 
-The graph reveals noteworthy insights into the distribution of highly-rated movies across genres. Notably, __Short Films__ exhibit the highest ratio of highly-rated movies to the total number of short films, positioning it at the forefront. __Drama__, despite its prominence in sheer numbers, takes the second position in this ratio analysis. Conversely, __Adventure__ and __Action__ genres exhibit the lowest ratios, indicating a comparatively lower prevalence of highly-rated movies within these genres. This nuanced examination contributes to a more comprehensive understanding of the quality distribution across various film genres.
+The graph reveals noteworthy insights into the distribution of highly-rated movies across genres. Notably, __Short Films__ exhibit the highest success rate, positioning it at the forefront. __Drama__, despite its prominence in sheer numbers, takes the second position in this ratio analysis. Conversely, __Adventure__ and __Action__ genres exhibit the lowest ratios, indicating a comparatively lower prevalence of highly-rated movies within these genres. This nuanced examination contributes to a more comprehensive understanding of the quality distribution across various film genres.
 
 ## 1.2 Genre Appeal: The Lure of Some Genres To Critics' Eyes 
 
@@ -203,22 +205,63 @@ An observational study is conducted to disect this claim. Logistic regression is
 However, there exists an obvious downward trend for both groups, with the average rating of ethnically diverse films decreasing faster. This does not necessarily mean that audience appreciates ethnic diversity less over time. As evidenced by [Figure 3.7], there is a fast-paced growth in the number of ethnically diverse films released over the decades. The decline in rating of ethnically diverse films coincides with this growth. As this number approaches and eventually surpasses in the last 2 decades the number of ethnically non-diverse films in the previous decade, the average rating of ethnically diverse films closes in on that of non-diverse ones. This could potentially be because in the earlier decades, few ethnically diverse films are made, and they generally end up well-received and highly rated. This possibly motivates movie studios to produce more films featuring diverse casts and with increasing volume, the average rating begins to converge to the average rating representative of the true population mean overall. This could mean that despite recent laudable calls in the public for greater diversity on the film set, history has shown that ethnic diversity alone does not translate to higher rating.
 
 # 4. Stars 
-
-The correlation between star power and ratings in the movie industry has long been a subject of fascination. Over the years, the influence of A-list actors and actresses on the success of a film has undergone a significant evolution. The captivating question persists: does the presence of renowned stars inherently lead to higher ratings? How has the impact of stars evolved over time in movie ratings? 
+The correlation between star power and ratings in the movie industry has long been a subject of fascination. Over the years, the influence of A-list actors and actresses on the success of a film has undergone a significant evolution. The captivating question persists: does the presence of renowned stars inherently lead to higher ratings? 
 
 ## 4.1 Star-Studded Success: How Movie Stars Shine on Film Rating
-We aim to explore the correlation between star actors and movie ratings through a linear regression analysis. Specifically, we investigate how each actor contributes to the overall movie ratings.
+In order to perform our analysis, we first must ask ourselves how we define star Actors. Performing a regression over actors who played in a handfull of movies might lead to misleading results. One hit wonders might be associated with very high ratings even tho they didn't play any significant role in the success of the movie they played in.
 
-To ensure a robust analysis, we focus on actors who have participated in a minimum of 35 movies, thereby isolating those with a substantial presence in the industry.
+![Figure 4.1 Histogram of number of Movies per Actor](./assets/img/4.1.png)
 
-By retaining only coefficients with p-values < 0.05, we guarantee the statistical significance of the data, ensuring meaningful results.
+In this graph, we see that most actors in our dataset played in only 1 film, those cannot be considered for any further analysis.
 
-![Figure 4.1 Impact On Movies Ratings by Star Actors](./assets/img/4.1.png)
+We've decided to first perform a linear regression to track the evolution of movie ratings with actors who played in at least 20 movies.
 
-It is crucial to note that, initially, the linear regression yielded a modest R-squared value of 0.1. This indicates that using actors alone poorly explains the variability in movie ratings. Nevertheless, the regression identified 14 actors whose contributions significantly impact movie ratings.
+Then, to tackle the impact of star actors in movies , we will restrict ourselves to actors who played in at least 35 movies.
 
-Movies featuring actors such as Bette Davis or Mel Blanc demonstrate a noteworthy boost of nearly one point in their ratings due to their involvement.
 
+# 4.2 How has the impact of stars evolved over time in movie ratings?
+
+Before diving into the core of our analysis, we will try to investigate the evolution of average ratings for actors who played in at least 20 movies.
+
+
+![Figure 4.2 Relation between year of release and average Rating](./assets/img/4.2.png)
+
+The graph reveals a slight downward slope in the linear regression, indicating that actors who have appeared in at least 20 movies have been receiving slightly worse reviews over time.
+
+However, this graph alone isn't sufficient to reveal the actors' impact on movie ratings.
+
+
+
+# 4.3 Does star power translate to higher ratings? 
+
+We want to understand the relationship between the precense of star Actors and movies ratings, for that, we perform a Linear regression to see how each Actor Contributes to the Movie Ratings
+
+
+
+Using only actors who played in at least 35 movies, by doing so , we isolate Actors with a real precense in the industry.
+
+By keeping only coefficient with p-values <0.05 , we ensure that the data is Significant and that the results are meaningfull: 
+
+
+![Figure 4.3 Impact On Movies Ratings for Star Actors](./assets/img/4.3.png)
+
+Before any further analysis, It's important to mention that the Linear regression had an R-squared of only 0.1 , meaning that only using actors explain quite badly the ratings of movies.
+
+However, the regression found 14 actors with a significant Impact on movies ratings. Which gives a definite answer to the question : Stars actors have a significiant impact on movie ratings.
+
+Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-point boost in their ratings due to their participation.
+
+
+
+In conclusion, by carefully refining the definition of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 
+However, the low r-squared of the linear regression shows that, while actors do play a role in movie's success, there are many others factors that impact movie ratings.
 
 # 5. Conclusion
-Finally, after a wonderful jouney, we arrived to the conclusion of that Drama genre is widely praised for its high quality among the past decades, especially when combined with Romantic themes. The high-rating movies ubiquously have a duration longer than 80 minutes and this is the sweet spot that people generally like.
+Finally, after a wonderful jouney, we arrived to the following conclusions.
+1. The Drama genre has consistently garnered widespread acclaim for its exceptional quality throughout the past decades, especially when intertwined with Romantic themes. Short films exhibit the highest success rate, closely followed by Drama, while Action and Adventure movies, although gaining popularity, showcase the lowest success rate. Additionally, familial themes prevail across various genres with high-rated movies.
+2. Movies with high ratings are commonly associated with a duration longer than 80 minutes, which appears to be a preferred sweet spot for audience satisfaction.
+3. While ethnically diverse films initially garnered higher ratings, an increase in their production volume over the years has led to a convergence with the average ratings of non-diverse films. This suggests that ethnic diversity alone may not guarantee consistently higher ratings.
+4. Through meticulous refinement in delineating the criteria for star actors, we come the conclusion that there are actors whose presence demonstrably exerted a substantial influence on the ratings of movies.
+
+Furthermore, it is crucial to underscore that the ratings of movies are shaped by a complex interplay of numerous factors. It is essential to acknowledge that various other contributing elements exist, which we were unable to incorporate into our analysis due to constraints in both time and the scope of the dataset.
+

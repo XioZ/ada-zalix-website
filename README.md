@@ -1,6 +1,4 @@
-# Team ZALIX Milestone 3
-
-# An Evolutionary View on The Making of Good Films
+# Introduction 
 
 Movies have long been a popular storytelling medium internationally, shaping cultures and conversations. While a movie's commercial success is often measured by its box office, its quality and significance in the hearts of millions of movie watchers are reflected more concretely by its rating. This project leverages a sizeable dataset from CMU, consisting of 7,380 movie titles between 1900 and 2009, and associated user ratings from IMDB, the world's "most popular and authoritative source" for movies and ratings. It invites you to take a ride through the annals of movie history, tracing the many facets that influence audience's perception of film quality - what leaves them with the impression of a "good film" and how they evolved with time. 
 
@@ -256,7 +254,8 @@ Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-po
 In conclusion, by carefully refining the definition of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 
 However, the low r-squared of the linear regression shows that, while actors do play a role in a movie's success, there are many other factors that impact movie ratings.
 
-# 5. Conclusion
+# Conclusion
+
 Finally, after a wonderful journey, we arrived at the following conclusions.
 1. The Drama genre has consistently garnered widespread acclaim for its exceptional quality throughout the past decades, especially when intertwined with Romantic themes. Short films exhibit the highest success rate, closely followed by Drama, while Action and Adventure movies, although gaining popularity, showcase the lowest success rate. Additionally, familial themes prevail across various genres with high-rated movies.
 2. Movies with high ratings are commonly associated with a duration longer than 80 minutes, which appears to be a preferred sweet spot for audience satisfaction.

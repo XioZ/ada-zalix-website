@@ -3,14 +3,26 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  img {
-    @apply mx-auto;
-  }
-  /* ... */
+    h1 {
+        font-size: 3rem; /* 48px */
+        line-height: 1;
+        font-weight: 700;
+        margin-top: 1rem; /* 16px */
+        margin-bottom: 1rem; /* 16px */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+        margin-top: 0.75rem; /* 12px */
+        margin-bottom: 0.75rem; /* 12px */
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ... */
 }

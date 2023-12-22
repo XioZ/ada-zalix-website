@@ -40,11 +40,11 @@ Given that our criterion for categorizing "good" movies hinges on those with a r
 
 ![Figure 1.4: Number of High-Rating Movies for the Top 10 Genres](./assets/img/1.4.png)
 
-The graphical representation highlights the prominence of the __Drama__ genre, possessing the highest count of highly-rated movies, a figure significantly surpassing other genres. However, it is imperative to consider that the sheer abundance of drama films in the dataset could contribute to this observation. To delve deeper into the matter, we meticulously examine the ratio of high-rated movies to the total number of movies within each genre, providing a more nuanced perspective on the prevalence of quality content within the diverse genres.
+The graphical representation highlights the prominence of the __Drama__ genre, possessing the highest count of highly-rated movies, a figure significantly surpassing other genres. However, it is imperative to consider that the sheer abundance of drama films in the dataset could contribute to this observation. To delve deeper into the matter, we meticulously examine the _success rate_, defined ratio of high-rated movies to the total number of movies within each genre, providing a more nuanced perspective on the prevalence of quality content within the diverse genres.
 
 ![Figure 1.5: Ratio of High-Rating Movies to the Total Number of Movies per Genre](./assets/img/1.5.png)
 
-The graph reveals noteworthy insights into the distribution of highly-rated movies across genres. Notably, __Short Films__ exhibit the highest ratio of highly-rated movies to the total number of short films, positioning it at the forefront. __Drama__, despite its prominence in sheer numbers, takes the second position in this ratio analysis. Conversely, __Adventure__ and __Action__ genres exhibit the lowest ratios, indicating a comparatively lower prevalence of highly-rated movies within these genres. This nuanced examination contributes to a more comprehensive understanding of the quality distribution across various film genres.
+The graph reveals noteworthy insights into the distribution of highly-rated movies across genres. Notably, __Short Films__ exhibit the highest success rate, positioning it at the forefront. __Drama__, despite its prominence in sheer numbers, takes the second position in this ratio analysis. Conversely, __Adventure__ and __Action__ genres exhibit the lowest ratios, indicating a comparatively lower prevalence of highly-rated movies within these genres. This nuanced examination contributes to a more comprehensive understanding of the quality distribution across various film genres.
 
 ## 1.2 Trend of Genres 
 
@@ -260,7 +260,7 @@ However, the low r-squared of the linear regression shows that, while actors do 
 
 # 5. Conclusion
 Finally after a wonderful jouney, we arrived to the following conclusions.
-1. The Drama genre has consistently received widespread acclaim for its high quality over the past decades, particularly when combined with Romantic themes. 
+1. The Drama genre has consistently garnered widespread acclaim for its exceptional quality throughout the past decades, especially when intertwined with Romantic themes. Short films exhibit the highest success rate, closely followed by Drama, while Action and Adventure movies, although gaining popularity, showcase the lowest success rate. Additionally, familial themes prevail across various genres with high-rated movies.
 2. Movies with high ratings are commonly associated with a duration longer than 80 minutes, which appears to be a preferred sweet spot for audience satisfaction.
 3. While ethnically diverse films initially garnered higher ratings, an increase in their production volume over the years has led to a convergence with the average ratings of non-diverse films. This suggests that ethnic diversity alone may not guarantee consistently higher ratings.
 4. Through meticulous refinement in delineating the criteria for star actors, we come the conclusion that there are actors whose presence demonstrably exerted a substantial influence on the ratings of movies.

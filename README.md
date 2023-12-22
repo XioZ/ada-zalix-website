@@ -2,20 +2,18 @@
 
 # An Evolutionary View on The Making of Good Films
 
-Embark on a captivating journey through the movie industry as we delve into the heart of the movie industry—a powerhouse shaping global economics and enriching our lives. With a myriad of films flourishing, the quest for quality has intensified, leading to the establishment of renowned rating systems like IMDb, a cinematic authority.
+Movies have long been a popular storytelling medium internationally, shaping cultures and conversations. While a movie's commercial success is often measured by its box office, its quality and significance in the hearts of millions of movie watchers are reflected more concretely by its rating. This project leverages on a sizeable dataset from CMU, consisting of 7,380 movie titles between 1900 and 2009, and associated user ratings from IMDB, the world's "most popular and authoritative source" for movies and ratings. It invites you to take a ride through the annals of movie history, tracing the many facets that influence audience's perception of film quality - what leave them with the impression of a "good film" and how they evolved with time. 
 
-Join us in unraveling the essence of a compelling film and exploring its various facets that contribute to cinematic excellence. This project invites you to take a ride through the annals of movie history, tracing the evolution of people's perceptions of what constitutes a "good film." So fasten your seatbelts and immerse yourself in an adventure that navigates the captivating landscape of cinematic evolution.
-
-In order to do this , we will investigate 
+To do this, we seek to explore and address a few important questions: 
 1. The Impact of genre and runtime on the films rating, the evolution of perception of genres over time.
 2. Are there any sweet spots or patterns in the length of top-rated films over the years? Is there a significant difference in the length of good movies across genres?
-3. How has the global actor demographics changed over time in terms of ethnic background, gender and languages spoken? Does the demographic shift translate to more ethnically, gender and linguistically diverse movies produced over the years? More importantly, is a more ethnically, gender and linguistically diverse cast appreciated by the audience and directly contribute to higher movie ratings?
-4. The presence of star translate to higher ratings ? How has the impact of stars evolved over time in movie ratings?
+3. Is a more ethnically diverse cast appreciated by the audience? Does it directly contribute to higher movie ratings?
+4. Do movie stars garner higher ratings for their films? Has the audience always been more lenient with rating when it comes to star-studded films?
 
-We have established a criterion for highly-rated movies, considering those with a rating surpassing 7. This threshold is set at approximately one standard deviation above the mean of average ratings, providing a robust benchmark for cinematic excellence.
+To frame our discussion, we consider "highly rated" films to have a minimum IMDB rating of 7. This score is set at approximately one standard deviation above the average rating of all films, giving us a robust basis for comparison.
 
 # 1. Genre 
-To begin with, let us take a look into __genres__, which play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
+To begin, let us take a look into __genres__, which play a crucial role in defining the stylistic and thematic elements that shape a film's identity. Unlike strict boundaries, many movies embrace a blend of genres, creating a rich tapestry of storytelling that transcends traditional categorizations. From action-packed adventures with a touch of romance to thought-provoking science fiction infused with elements of comedy, the interplay of multiple genres adds layers of complexity and intrigue to cinematic experiences. Whether it's a thrilling action-comedy, a romantic fantasy epic, or a crime drama with elements of mystery, the fusion of genres allows filmmakers to craft narratives that appeal to a diverse audience, offering a dynamic and ever-evolving landscape within the world of cinema.
 
 In our evaluation of cinematic quality, the role of genres in influencing ratings emerges as a noteworthy consideration. The objectives of this analysis encompass the exploration of various research questions:
 

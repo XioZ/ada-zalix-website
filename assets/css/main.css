@@ -12,14 +12,14 @@
     }
 
     h2 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        font-weight: 700;
-        margin-top: 0.75rem; /* 12px */
-        margin-bottom: 0.75rem; /* 12px */
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+        font-weight: 700 !important;
+        margin-top: 0.75rem !important; /* 12px */
+        margin-bottom: 0.75rem !important; /* 12px */
     }
 
-    img {
+    section img {
         margin-left: auto;
         margin-right: auto;
     }

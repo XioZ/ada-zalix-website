@@ -3,10 +3,14 @@
 Movies have long been a popular storytelling medium internationally, shaping cultures and conversations. While a movie's commercial success is often measured by its box office, its quality and significance in the hearts of millions of movie watchers are reflected more concretely by its rating. This project leverages a sizeable dataset from CMU, consisting of 7,380 movie titles between 1900 and 2009, and associated user ratings from IMDB, the world's "most popular and authoritative source" for movies and ratings. It invites you to take a ride through the annals of movie history, tracing the many facets that influence audience's perception of film quality - what leaves them with the impression of a "good film" and how they evolved with time. 
 
 To do this, we seek to explore and address a few important questions: 
-1. How does a film's genre influence its ratings, and what role does duration play in this relationship? Have trends in genre popularity evolved over time, revealing discernible patterns in audience preferences across decades?
-2. Are there any sweet spots or patterns in the length of top-rated films over the years? Is there a significant difference in the length of good movies across genres?
-3. Is a more ethnically diverse cast appreciated by the audience? Does it directly contribute to higher movie ratings?
-4. Do movie stars garner higher ratings for their films? Has the audience always been more lenient with ratings when it comes to star-studded films?
+<ol>
+<li>How does a film's genre influence its ratings, and what role does duration play in this relationship? Have trends in genre popularity evolved over time, revealing discernible patterns in audience preferences across decades?
+</li>
+<li>Are there any sweet spots or patterns in the length of top-rated films over the years? Is there a significant difference in the length of good movies across genres?
+</li>
+<li>Is a more ethnically diverse cast appreciated by the audience? Does it directly contribute to higher movie ratings?</li>
+<li>Do movie stars garner higher ratings for their films? Has the audience always been more lenient with ratings when it comes to star-studded films?</li>
+</ol>
 
 To frame our discussion, we consider "highly rated" films to have a minimum IMDB rating of 7. This score is set at approximately one standard deviation above the average rating of all films, giving us a robust basis for comparison.
 
@@ -17,10 +21,12 @@ To begin, let us delve into genres, which play a crucial role in defining the st
 
 In our evaluation of cinematic quality, the role of genres in influencing ratings emerges as a noteworthy consideration. The objectives of this analysis encompass the exploration of various research questions:
 
-- Identification of the top 10 most prolific genres in the history of cinema.
-- Evaluation of the proportion of exemplary films within the aforementioned 10 most prolific genres.
-- Examination of the intersection between genres and the temporal variable, aiming to identify "golden eras" marked by periods with the highest number of highly-rated films within a specific genre. This will be accomplished through the visualization of highly-rated movie counts per decade.
-- Scrutiny of genre combinations to discern noteworthy amalgamations during specific time periods. This aspect of the analysis will involve the generation of a bar chart illustrating the ratio of highly-rated movies relative to each decade.
+<ul>
+<li>Identification of the top 10 most prolific genres in the history of cinema.</li>
+<li>Evaluation of the proportion of exemplary films within the aforementioned 10 most prolific genres.</li>
+<li>Examination of the intersection between genres and the temporal variable, aiming to identify "golden eras" marked by periods with the highest number of highly-rated films within a specific genre. This will be accomplished through the visualization of highly-rated movie counts per decade.</li>
+<li>Scrutiny of genre combinations to discern noteworthy amalgamations during specific time periods. This aspect of the analysis will involve the generation of a bar chart illustrating the ratio of highly-rated movies relative to each decade.</li>
+</ul>
 
 ## 1.1 Most Prolific: Top 10 Genres in The History of Cinema
 {% include 1-1.html %}
@@ -249,18 +255,18 @@ However, the regression found 14 actors with a significant impact on movie ratin
 
 Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-point boost in their ratings due to their participation.
 
-
-
 In conclusion, by carefully refining the definition of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 
 However, the low r-squared of the linear regression shows that, while actors do play a role in a movie's success, there are many other factors that impact movie ratings.
 
 # Conclusion
 
-Finally, after a wonderful journey, we arrived at the following conclusions.
-1. The Drama genre has consistently garnered widespread acclaim for its exceptional quality throughout the past decades, especially when intertwined with Romantic themes. Short films exhibit the highest success rate, closely followed by Drama, while Action and Adventure movies, although gaining popularity, showcase the lowest success rate. Additionally, familial themes prevail across various genres with high-rated movies.
-2. Movies with high ratings are commonly associated with a duration longer than 80 minutes, which appears to be a preferred sweet spot for audience satisfaction.
-3. While ethnically diverse films initially garnered higher ratings, an increase in their production volume over the years has led to a convergence with the average ratings of non-diverse films. This suggests that ethnic diversity alone may not guarantee consistently higher ratings.
-4. Through meticulous refinement in delineating the criteria for star actors, we come the conclusion that there are actors whose presence demonstrably exerted a substantial influence on the ratings of movies.
+Finally, after a wonderful journey through cinematic history, we arrived at the following conclusions:
+<ol>
+<li>The drama genre has consistently garnered widespread acclaim for its exceptional quality throughout the past decades, especially when intertwined with romantic themes. Short films exhibit the highest success rate, closely followed by drama, while action and adventure movies, although gaining popularity, showcase the lowest success rate. Additionally, family themes prevail across various genres with high-rated movies.</li>
+<li>Movies with high ratings are commonly associated with a duration longer than 80 minutes, which appears to be a preferred sweet spot for audience satisfaction.</li>
+<li>While ethnically diverse films initially garnered higher ratings, an increase in their production volume over the years has led to a convergence with the average ratings of non-diverse films. This suggests that ethnic diversity alone may not guarantee consistently higher ratings.</li>
+<li>There are actors whose presence exerts a substantial influence in lifting the rating of a movie.</li>
+</ol>
 
-Furthermore, it is crucial to underscore that the ratings of movies are shaped by a complex interplay of numerous factors. It is essential to acknowledge that various other contributing elements exist, which we were unable to incorporate into our analysis due to constraints in both time and the scope of the dataset.
+It is crucial to underscore that movie ratings are shaped by a complex interplay of myriads of factors. It is essential to acknowledge that various other contributing elements exist, which regrettably could not be incorporated into our analysis due to constraints in both time and the scope of the dataset.
 

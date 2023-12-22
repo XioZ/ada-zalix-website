@@ -217,7 +217,7 @@ We've decided to first perform a linear regression to track the evolution of mov
 Then, to tackle the impact of star actors in movies, we will restrict ourselves to actors who played in at least 35 movies.
 
 
-# 4.2 How has the impact of stars evolved over time in movie ratings?
+# 4.2 Star's Evolution: How A Star's Impact Changes Over Time
 
 Before diving into the core of our analysis, we will try to investigate the evolution of average ratings for actors who played in at least 20 movies.
 
@@ -230,7 +230,7 @@ However, this graph alone isn't sufficient to reveal the actors' impact on movie
 
 
 
-# 4.3 Does star power translate to higher ratings? 
+# 4.3 Star Power: Movie Start = Higher Rating? 
 
 We want to understand the relationship between the presence of star actors and movie ratings, for that, we perform a linear regression to see how each actor contributes to the movie ratings
 

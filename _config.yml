@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: An Evolutionary View on The Perception of Good Films
 description: What Influence Audience's Perceived Film Quality & How They Changed Over Time
-show_downloads: True
+show_downloads: False
 navigation:
   - title: Home
     url: /

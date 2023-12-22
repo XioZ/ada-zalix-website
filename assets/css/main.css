@@ -9,5 +9,8 @@
   h2 {
     @apply text-xl;
   }
+  img {
+    @apply mx-auto;
+  }
   /* ... */
 }

@@ -2,13 +2,13 @@
 
 # An Evolutionary View on The Making of Good Films
 
-Movies have long been a popular storytelling medium internationally, shaping cultures and conversations. While a movie's commercial success is often measured by its box office, its quality and significance in the hearts of millions of movie watchers are reflected more concretely by its rating. This project leverages on a sizeable dataset from CMU, consisting of 7,380 movie titles between 1900 and 2009, and associated user ratings from IMDB, the world's "most popular and authoritative source" for movies and ratings. It invites you to take a ride through the annals of movie history, tracing the many facets that influence audience's perception of film quality - what leave them with the impression of a "good film" and how they evolved with time. 
+Movies have long been a popular storytelling medium internationally, shaping cultures and conversations. While a movie's commercial success is often measured by its box office, its quality and significance in the hearts of millions of movie watchers are reflected more concretely by its rating. This project leverages a sizeable dataset from CMU, consisting of 7,380 movie titles between 1900 and 2009, and associated user ratings from IMDB, the world's "most popular and authoritative source" for movies and ratings. It invites you to take a ride through the annals of movie history, tracing the many facets that influence audience's perception of film quality - what leaves them with the impression of a "good film" and how they evolved with time. 
 
 To do this, we seek to explore and address a few important questions: 
 1. How does a film's genre influence its ratings, and what role does duration play in this relationship? Have trends in genre popularity evolved over time, revealing discernible patterns in audience preferences across decades?
 2. Are there any sweet spots or patterns in the length of top-rated films over the years? Is there a significant difference in the length of good movies across genres?
 3. Is a more ethnically diverse cast appreciated by the audience? Does it directly contribute to higher movie ratings?
-4. Do movie stars garner higher ratings for their films? Has the audience always been more lenient with rating when it comes to star-studded films?
+4. Do movie stars garner higher ratings for their films? Has the audience always been more lenient with ratings when it comes to star-studded films?
 
 To frame our discussion, we consider "highly rated" films to have a minimum IMDB rating of 7. This score is set at approximately one standard deviation above the average rating of all films, giving us a robust basis for comparison.
 
@@ -121,7 +121,7 @@ After identifying the most 'liked' genres based on the highest-ranked movies, we
 
 ![Figure 1.12: Topic distribution within the top 5 most preferred genres](./assets/img/1.12.png)
 
-We notice that the family topic is common within all the genres with a significant percentage. This suggests that the family tocpic might have an influcence with the good ranking of movies, therefore might be within the most appreciated topics by the film public.
+We notice that the family topic is common within all the genres with a significant percentage. This suggests that the family topic might have an influence with the good ranking of movies, therefore might be within the most appreciated topics by the film public.
 
 # 2. Length 
 
@@ -133,7 +133,7 @@ The length of a film, a fundamental element in cinematic storytelling, serves as
 
 Upon examination of the graph presented above, a noteworthy pattern emerges where a considerable number of films exhibit either exceptionally short or excessively long durations, exceeding 5000 minutes. To ensure the precision and reliability of our analysis, it is imperative to address these outliers. Eliminating such extreme values is essential for a more accurate representation of the dataset and will contribute to the robustness of our findings.
 
-Additionally, it is pertinent to acknowledge that short films often have relatively brief durations, which could potentially skew our analysis of runtime for regular feature-length movies. Fortunately, a substantial portion of these short films falls within the category of outliers slated for removal. This strategic refinement of the dataset aims to enhance the integrity of our examination of movie durations and facilitate a more nuanced understanding of the temporal aspects within the cinematic landscape.
+Additionally, it is pertinent to acknowledge that short films often have relatively brief durations, which could potentially skew our analysis of runtime for regular feature-length movies. Fortunately, a substantial portion of these short films falls within the category of outliers slated for removal. This strategic refinement of the dataset aims to enhance the integrity of our examination of movie durations and facilitate a more nuanced understanding of the temporal aspects of the cinematic landscape.
 
 ![Figure 2.2: Distribution of Movie Runtime after Removal of Outliers](./assets/img/2.2.png)
 
@@ -162,61 +162,61 @@ Based on the outcomes of the t-test, it is evident that a statistically signific
 
 # 3. Ethnic Diversity
 
-Hollywood, and many major film studios around the world, has long faced criticism for the lack of racial diversity in its workforce both on and off the screens. In recent decades, there has also been a growing call for greater representation of racial minorities on the silver screen. [Figure 3.1] shows a quick exploratory analysis of the distribution of the number of ethnicities among cast members of each film between 1900 to 2009. As shown in the figure, the curve of films rated 7 or above is largely above that of films rated below. This suggests that highly rated films generally have more ethnically diverse casts than those lower rated, and cast ethnic diversity could be an interesting angle to further our investigation. 
+Hollywood, and many major film studios around the world, have long faced criticism for the lack of racial diversity in their workforce both on and off the screens. In recent decades, there has also been a growing call for greater representation of racial minorities on the silver screen. [Figure 3.1] shows a quick exploratory analysis of the distribution of the number of ethnicities among cast members of each film between 1900 and 2009. As shown in the figure, the curve of films rated 7 or above is largely above that of films rated below. This suggests that highly rated films generally have more ethnically diverse casts than those lower rated, and cast ethnic diversity could be an interesting angle to further our investigation. 
 
 ![Figure 3.1: CCDF of Number of Cast Ethnicities in High-Rating vs Lower-Rating Films](./assets/img/3.1.png)
 
 ## 3.1 Shifting Demographics: From Diverse Actors Pool To Diverse Casts
 
-To set the stage, let's first take a look at how the ethnic demographics of actors has evolved globally over time. [Figure 3.2] shows that the 110-year history of film-making has witnessed a booming growth in the ethnic background of actors, with the trend accelarating after 1960s.
+To set the stage, let's first take a look at how the ethnic demographics of actors have evolved globally over time. [Figure 3.2] shows that the 110-year history of film-making has witnessed a booming growth in the ethnic background of actors, with the trend accelarating after the 1960s.
 
 This fast diversifying shift in the acting workforce is reflected on the silver screen, through greater, though much more subdued, ethnic representation by the collective featuring of actors from different ethnic backgrounds in the same films.
 
 ![Figure 3.2: Number of Actor Ethnicities Over Time & Figure 3.3: Distribution of Number of Cast Ethnicities Over Time](./assets/img/3.2_3.png)
 
-In [Figure 3.3], for the first half of the century, nearly all films' casts have remained dominated by a single ethnicity, as both the average and the spread of the number of ethnicities among cast per film remained thin. As indicated by [Figure 3.1] above, the number of cast ethnicities follows power law distribution. [Figure 3.3] therefore measures its average across films in each decade by geometric mean.
+In [Figure 3.3], for the first half of the century, nearly all films' casts have remained dominated by a single ethnicity, as both the average and the spread of the number of ethnicities among casts per film remained thin. As indicated by [Figure 3.1] above, the number of cast ethnicities follows a power law distribution. [Figure 3.3] therefore measures its average across films in each decade by geometric mean.
 
-Since 1960s, however, the average cast ethnicity has slowly climbed, reaching 2 for the first time in 1900s and reversing the trend slightly at the turn of the century. In the backdrop of a widening spread, more and more films have joined to cast more actors from different ethnic groups during this period, with half of the films featuring actors from at least 2 ethnic groups and a quarter of films featuring more than 3 since 1980s.
+Since the 1960s, however, the average cast ethnicity has slowly climbed, reaching 2 for the first time in the 1900s and reversing the trend slightly at the turn of the century. In the backdrop of a widening spread, more and more films have joined to cast more actors from different ethnic groups during this period, with half of the films featuring actors from at least 2 ethnic groups and a quarter of films featuring more than 3 since the 1980s.
 
-Although most films' casts have stayed ethnically homogeneous, there has always been some outlier films throughout history with much more ethnically diverse cast than their contemporaries, potentially paving the way for further diversification in the future.
+Although most films' casts have stayed ethnically homogeneous, there have always been some outlier films throughout history with a much more ethnically diverse cast than their contemporaries, potentially paving the way for further diversification in the future.
 
 ## 3.2 Increasing Representation: Appreciated by Audience And Reflected in Rating?
 
-History has shown that actors from increasingly diverse ethnic backgrounds are getting film roles and seen on the silver screen. However, does the audience consider a film with a more ethnically diverse cast a better film? To examine how ethnic diversity impacts a film's overall perceived quality by viewers and also how this impact has changed over time, we analyze the relationship between a film cast's ethnic diversity and its audience ratings. Tying into the concept of 'representation', the ethnic diversity of a film is measured by the total number of different ethnicities among actors in a film as seen directly by the audience on a movie screen. Film quality as perceived by the audience is captured by the overall weighted average of all user rating scores on IMDB. As the vast majority of films consist of actors with identical ethnicity until the 1950s, the analysis begins with the 1960s.
+History has shown that actors from increasingly diverse ethnic backgrounds are getting film roles and seen on the silver screen. However, does the audience consider a film with a more ethnically diverse cast a better film? To examine how ethnic diversity impacts a film's overall perceived quality by viewers and how this impact has changed over time, we analyze the relationship between a film cast's ethnic diversity and its audience ratings. Tying into the concept of 'representation', the ethnic diversity of a film is measured by the total number of different ethnicities among actors in a film as seen directly by the audience on a movie screen. Film quality as perceived by the audience is captured by the overall weighted average of all user rating scores on IMDB. As the vast majority of films consist of actors of identical ethnicity until the 1950s, the analysis begins with the 1960s.
 
 In general, there is a small but positive correlation between a film's cast ethnic diversity and rating. As shown in [Figure 3.4] at various levels, across decades, the more ethnically diverse the cast, the higher the film rating. 
 
-![Figure 3.4: Correlation Between Number of Cast Ethnicity and Film](./assets/img/3.4.png)
+![Figure 3.4: Correlation Between Number of Cast Ethnicities and Film](./assets/img/3.4.png)
 
-This correlation, measured by the Pearson Correlation Coefficient, is the strongest at the diversity level where only films featuring actors from at least 3 different ethnic groups are considered. We therefore uses this as a threshold to split films into ethnically diverse and non-diverse groups to continue the analysis. This threshold makes sense because in most countries where there is one dominant ethnic group, 'diverse' should mean seeing at least two minority ethnic groups featured as well. This begs the question - does an ethnically diverse cast contribute to a more highly rated film? Let's dive in. 
+This correlation, measured by the Pearson Correlation Coefficient, is the strongest at the diversity level where only films featuring actors from at least 3 different ethnic groups are considered. We therefore use this as a threshold to split films into ethnically diverse and non-diverse groups to continue the analysis. This threshold makes sense because in most countries where there is one dominant ethnic group, 'diverse' should mean seeing at least two minority ethnic groups featured as well. This begs the question - does an ethnically diverse cast contribute to a more highly rated film? Let's dive in. 
 
 ## 3.3 Identifying Impact: Ethnically Diverse Cast Improves Film Rating?
 
-After establishing a treatment group of ethnically diverse films and a control group of non-diverse films, their average ratings are compared in [Figure 3.5]. Notably, films with ethnically diverse cast are rated consistently higher, with the 95% confidence interval overlapping only in the 1970s and 2000s. 
+After establishing a treatment group of ethnically diverse films and a control group of non-diverse films, their average ratings are compared in [Figure 3.5]. Notably, films with an ethnically diverse cast are consistently rated higher, with the 95% confidence interval overlapping only in the 1970s and 2000s. 
 
 ![Figure 3.5: Average Rating of Ethnically Diverse vs Non-Diverse Films](./assets/img/3.5.png)
 
-An observational study is conducted to disect this claim. Logistic regression is carried out using data from both groups and takes observed confounders as features, including release date, countries, languages and genres. The regression model calculates each film's probability to have an ethnically diverse cast. Propensity matching is then performed in each decade, to pair match similar films from both groups. After removing covariates through pair matching, [Figure 3.6] reveals that the claim still stands, as ethnically diverse films consistently outperform non-diverse films in average rating. Hypothesis testing shows that the difference in average ratings is statistically significant in 3 of the 5 decades, which are highlighted in circles. This confirms that films with an ethnically diverse cast tend to be better-received by the audience, and ethnic diversity among cast members contributes to higher ratings.
+An observational study is conducted to dissect this claim. Logistic regression is carried out using data from both groups and takes observed confounders as features, including release dates, countries, languages and genres. The regression model calculates each film's probability of having an ethnically diverse cast. Propensity matching is then performed in each decade, to pair match similar films from both groups. After removing covariates through pair matching, [Figure 3.6] reveals that the claim still stands, as ethnically diverse films consistently outperform non-diverse films in average rating. Hypothesis testing shows that the difference in average ratings is statistically significant in 3 of the 5 decades, which are highlighted in circles. This confirms that films with an ethnically diverse cast tend to be better-received by the audience, and ethnic diversity among cast members contributes to higher ratings.
 
 
 ![Figure 3.6: Average Rating of Pair-Matched Ethnically Diverse vs Non-Diverse Films & Figure 3.7: Number of Ethnically Diverse vs Non-Diverse Films Released](./assets/img/3.6_7.png)
 
 
-However, there exists an obvious downward trend for both groups, with the average rating of ethnically diverse films decreasing faster. This does not necessarily mean that audience appreciates ethnic diversity less over time. As evidenced by [Figure 3.7], there is a fast-paced growth in the number of ethnically diverse films released over the decades. The decline in rating of ethnically diverse films coincides with this growth. As this number approaches and eventually surpasses in the last 2 decades the number of ethnically non-diverse films in the previous decade, the average rating of ethnically diverse films closes in on that of non-diverse ones. This could potentially be because in the earlier decades, few ethnically diverse films are made, and they generally end up well-received and highly rated. This possibly motivates movie studios to produce more films featuring diverse casts and with increasing volume, the average rating begins to converge to the average rating representative of the true population mean overall. This could mean that despite recent laudable calls in the public for greater diversity on the film set, history has shown that ethnic diversity alone does not translate to higher rating.
+However, there exists an obvious downward trend for both groups, with the average rating of ethnically diverse films decreasing faster. This does not necessarily mean that the audience appreciates ethnic diversity less over time. As evidenced by [Figure 3.7], there has been a fast-paced growth in the number of ethnically diverse films released over the decades. The decline in rating of ethnically diverse films coincides with this growth. As this number approaches and eventually surpasses in the last 2 decades the number of ethnically non-diverse films in the previous decade, the average rating of ethnically diverse films closes in on that of non-diverse ones. This could potentially be because in the earlier decades, few ethnically diverse films were made, and they generally ended up well-received and highly rated. This possibly motivates movie studios to produce more films featuring diverse casts and with increasing volume, the average rating begins to converge to the average rating representative of the true population mean overall. This could mean that despite recent laudable calls in the public for greater diversity on the film set, history has shown that ethnic diversity alone does not translate to higher ratings.
 
 # 4. Stars 
 The correlation between star power and ratings in the movie industry has long been a subject of fascination. Over the years, the influence of A-list actors and actresses on the success of a film has undergone a significant evolution. The captivating question persists: does the presence of renowned stars inherently lead to higher ratings? 
 
 ## 4.1 Star-Studded Success: How Movie Stars Shine on Film Rating
-In order to perform our analysis, we first must ask ourselves how we define star Actors. Performing a regression over actors who played in a handfull of movies might lead to misleading results. One hit wonders might be associated with very high ratings even tho they didn't play any significant role in the success of the movie they played in.
+In order to perform our analysis, we first must ask ourselves how we define star Actors. Performing a regression over actors who played in a handful of movies might lead to misleading results. One-hit wonders might be associated with very high ratings even though they didn't play any significant role in the success of the movie they played in.
 
 ![Figure 4.1 Histogram of number of Movies per Actor](./assets/img/4.1.png)
 
-In this graph, we see that most actors in our dataset played in only 1 film, those cannot be considered for any further analysis.
+In this graph, we see that most actors in our dataset played in only one film, those cannot be considered for any further analysis.
 
 We've decided to first perform a linear regression to track the evolution of movie ratings with actors who played in at least 20 movies.
 
-Then, to tackle the impact of star actors in movies , we will restrict ourselves to actors who played in at least 35 movies.
+Then, to tackle the impact of star actors in movies, we will restrict ourselves to actors who played in at least 35 movies.
 
 
 # 4.2 How has the impact of stars evolved over time in movie ratings?
@@ -234,30 +234,30 @@ However, this graph alone isn't sufficient to reveal the actors' impact on movie
 
 # 4.3 Does star power translate to higher ratings? 
 
-We want to understand the relationship between the precense of star Actors and movies ratings, for that, we perform a Linear regression to see how each Actor Contributes to the Movie Ratings
+We want to understand the relationship between the presence of star actors and movie ratings, for that, we perform a linear regression to see how each actor contributes to the movie ratings
 
 
 
-Using only actors who played in at least 35 movies, by doing so , we isolate Actors with a real precense in the industry.
+By using only actors who played in at least 35 movies, we isolate actors with a real presence in the industry.
 
-By keeping only coefficient with p-values <0.05 , we ensure that the data is Significant and that the results are meaningfull: 
+By keeping only coefficients with p-values <0.05 , we ensure that the data is significant and that the results are meaningful.
 
 
 ![Figure 4.3 Impact On Movies Ratings for Star Actors](./assets/img/4.3.png)
 
-Before any further analysis, It's important to mention that the Linear regression had an R-squared of only 0.1 , meaning that only using actors explain quite badly the ratings of movies.
+Before any further analysis, it is important to mention that the linear regression had an R-squared of only 0.1, meaning that only using actors explains quite badly the ratings of movies.
 
-However, the regression found 14 actors with a significant Impact on movies ratings. Which gives a definite answer to the question : Stars actors have a significiant impact on movie ratings.
+However, the regression found 14 actors with a significant impact on movie ratings. Which gives a definite answer to the question: stars actors have a significant impact on movie ratings.
 
 Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-point boost in their ratings due to their participation.
 
 
 
 In conclusion, by carefully refining the definition of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 
-However, the low r-squared of the linear regression shows that, while actors do play a role in movie's success, there are many others factors that impact movie ratings.
+However, the low r-squared of the linear regression shows that, while actors do play a role in a movie's success, there are many other factors that impact movie ratings.
 
 # 5. Conclusion
-Finally, after a wonderful jouney, we arrived to the following conclusions.
+Finally, after a wonderful journey, we arrived at the following conclusions.
 1. The Drama genre has consistently garnered widespread acclaim for its exceptional quality throughout the past decades, especially when intertwined with Romantic themes. Short films exhibit the highest success rate, closely followed by Drama, while Action and Adventure movies, although gaining popularity, showcase the lowest success rate. Additionally, familial themes prevail across various genres with high-rated movies.
 2. Movies with high ratings are commonly associated with a duration longer than 80 minutes, which appears to be a preferred sweet spot for audience satisfaction.
 3. While ethnically diverse films initially garnered higher ratings, an increase in their production volume over the years has led to a convergence with the average ratings of non-diverse films. This suggests that ethnic diversity alone may not guarantee consistently higher ratings.

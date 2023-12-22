@@ -217,9 +217,7 @@ In order to perform our analysis, we first must ask ourselves how we define star
 ![Figure 4.1 Histogram of number of Movies per Actor](./assets/img/4.1.png)
 
 In this graph, we see that most actors in our dataset played in only one film, those cannot be considered for any further analysis.
-
 We've decided to first perform a linear regression to track the evolution of movie ratings with actors who played in at least 20 movies.
-
 Then, to tackle the impact of star actors in movies, we will restrict ourselves to actors who played in at least 35 movies.
 
 
@@ -231,28 +229,24 @@ Before diving into the core of our analysis, we will try to investigate the evol
 ![Figure 4.2 Relation between year of release and average Rating](./assets/img/4.2.png)
 
 The graph reveals a slight downward slope in the linear regression, indicating that actors who have appeared in at least 20 movies have been receiving slightly worse reviews over time.
-
 However, this graph alone isn't sufficient to reveal the actors' impact on movie ratings.
 
 
 
 ## 4.3 Star Power: Movie Start = Higher Rating? 
 
-We want to understand the relationship between the presence of star actors and movie ratings, for that, we perform a linear regression to see how each actor contributes to the movie ratings
+We want to understand the relationship between the presence of star actors and movie ratings, for that, we perform a linear regression to see how each actor contributes to the movie ratings.
 
 
 
 By using only actors who played in at least 35 movies, we isolate actors with a real presence in the industry.
-
-By keeping only coefficients with p-values <0.05 , we ensure that the data is significant and that the results are meaningful.
+By keeping only coefficients with p-values <0.05, we ensure that the data is significant and that the results are meaningful.
 
 
 ![Figure 4.3 Impact On Movies Ratings for Star Actors](./assets/img/4.3.png)
 
 Before any further analysis, it is important to mention that the linear regression had an R-squared of only 0.1, meaning that only using actors explains quite badly the ratings of movies.
-
 However, the regression found 14 actors with a significant impact on movie ratings. Which gives a definite answer to the question: stars actors have a significant impact on movie ratings.
-
 Movies featuring actors like Bette Davis or Mel Blanc experience a nearly one-point boost in their ratings due to their participation.
 
 In conclusion, by carefully refining the definition of star actors, we identified 14 actors whose presence significantly impacted movie ratings. 

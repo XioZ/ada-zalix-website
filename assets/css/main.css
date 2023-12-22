@@ -4,19 +4,19 @@
 
 @layer base {
     section h1 {
-        font-size: 3rem; /* 48px */
-        line-height: 1;
-        font-weight: 700;
-        margin-top: 1.5rem; /* 16px */
-        margin-bottom: 1.5rem; /* 16px */
+        font-size: 3rem !important; /* 48px */
+        line-height: 1 !important;
+        font-weight: 700 !important;
+        margin-top: 1.5rem !important; /* 16px */
+        margin-bottom: 1.5rem !important; /* 16px */
     }
 
     section h2 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        font-weight: 700;
-        margin-top: 1rem; /* 12px */
-        margin-bottom: 1rem; /* 12px */
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+        font-weight: 700 !important;
+        margin-top: 1rem !important; /* 12px */
+        margin-bottom: 1rem !important; /* 12px */
     }
 
     section img {
